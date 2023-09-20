@@ -1,7 +1,10 @@
 body {
 
-background-image: url(kIP.jfif);
- 
+background-image: url('jkt.jfif');
+ background-repeat: no-repeat;
+background-size: cover;
 
+}
+body {font-size: 20px;
 
 }
