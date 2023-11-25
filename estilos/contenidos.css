@@ -3,15 +3,6 @@
     margin: 0px;
 }
 
-.desvanecer {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-.desvanecer:hover {
-    opacity: 1;
-  }
-
 .horizontal {
     background-color: #000000;
     margin: 0px;
@@ -24,7 +15,7 @@
     font-family: 'Exo 2', sans-serif;
     padding: 10px;
     font-size: 60px; 
-    color: rgb(41, 44, 66);
+    color: rgb(255, 8, 0);
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     font-weight: bold; 
@@ -33,7 +24,7 @@
 }
 .imagen {
     content: "";
-    background-image: url(https://cdn.wallpapersafari.com/54/80/f9DHBx.jpg);
+    background-image: url(https://iaexpert.academy/wp-content/uploads/2021/05/algoritmoknn.png);
     position: absolute;
     background-size: contain;
     top: 0;
@@ -43,10 +34,7 @@
     opacity: 0.8;
     z-index: -1;
 }
-.com {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-}
+
 .es {
     font-family: 'Exo 2', sans-serif;
     font-size: 40px;
@@ -58,18 +46,23 @@ a {
     text-decoration: none;
     color: white;
 }
+.elemento:hover {
+    background-color: #edf3f3; 
+    color: #000000; 
+}
 .elemento {
-    background-color: #122531; 
+    background-color: #145075; 
     color: #b48181; 
     padding: 10px;
     transition: background-color 0.5s, color 0.5s;
 }
-.elemento:hover {
-    background-color: #edf3f3; 
-    color: #333; 
+.com {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
 }
+
 .navegacion {
-    background-color: #122531;
+    background-color: #119ff7;
     height: 47px;
     text-align: left;
     display: flex;
@@ -89,10 +82,7 @@ a {
     background-size: contain;
     width: 1800px;
 }
-.contenedor main{
-    background-color: rgb(182, 182, 182);
-    background-size: contain;
-}
+
 .contenedor aside p {
     padding: 10px;
 }
@@ -101,6 +91,10 @@ a {
 }
 .contenedor article {
     padding: 10px;
+}
+.contenedor main{
+    background-color: rgb(209, 129, 25);
+    background-size: contain;
 }
 .ul{
     padding: 20px;
@@ -141,47 +135,12 @@ left:20%;
 
 
 
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
-    
-    background-image: url('');
 
-    
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-}
-h1 {
-    color: #000000;
-}
-h2 {
-    color: #000000;
-}
-h3 {
-    color: #333;
-}
-p {
-    color: #302c2c;
-}
-strong {
-    font-weight: bold;
-}
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-details {
-    margin-left: 40px;
-}
-summary {
-    cursor: pointer;
-}
-.recuadro {
-    width: 1000px; 
-    padding: 20px; 
-    border: 3px solid #000; 
-    border-radius: 10px; 
-    background-color: #a7ecb6; 
-}
+
+
+
+
+
+
+
+
