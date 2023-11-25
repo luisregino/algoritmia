@@ -15,7 +15,7 @@
     font-family: 'Exo 2', sans-serif;
     padding: 10px;
     font-size: 60px; 
-    color: rgb(41, 44, 66);
+    color: rgb(255, 8, 0);
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     font-weight: bold; 
@@ -34,10 +34,7 @@
     opacity: 0.8;
     z-index: -1;
 }
-.com {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-}
+
 .es {
     font-family: 'Exo 2', sans-serif;
     font-size: 40px;
@@ -49,16 +46,21 @@ a {
     text-decoration: none;
     color: white;
 }
+.elemento:hover {
+    background-color: #edf3f3; 
+    color: #000000; 
+}
 .elemento {
     background-color: #145075; 
     color: #b48181; 
     padding: 10px;
     transition: background-color 0.5s, color 0.5s;
 }
-.elemento:hover {
-    background-color: #edf3f3; 
-    color: #333; 
+.com {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
 }
+
 .navegacion {
     background-color: #119ff7;
     height: 47px;
@@ -80,10 +82,7 @@ a {
     background-size: contain;
     width: 1800px;
 }
-.contenedor main{
-    background-color: rgb(182, 182, 182);
-    background-size: contain;
-}
+
 .contenedor aside p {
     padding: 10px;
 }
@@ -92,6 +91,10 @@ a {
 }
 .contenedor article {
     padding: 10px;
+}
+.contenedor main{
+    background-color: rgb(209, 129, 25);
+    background-size: contain;
 }
 .ul{
     padding: 20px;
