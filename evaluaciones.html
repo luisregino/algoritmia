@@ -4,12 +4,148 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+<script src="Java.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilos/inicio.css">
 </head>
-<body><header>
+<body>
+<style>
+    *{
+    padding: 0px;
+    margin: 0px;
+}
+
+.horizontal {
+    background-color: #000000;
+    margin: 0px;
+    border: 40px;
+}
+.contenedor1 {
+    position: relative;
+}
+.titulo {
+    font-family: 'Exo 2', sans-serif;
+    padding: 10px;
+    font-size: 60px; 
+    color: rgb(255, 8, 0);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-weight: bold; 
+    z-index: 1;
+    position: relative;
+}
+.imagen {
+    content: "";
+    background-image: url(https://iaexpert.academy/wp-content/uploads/2021/05/algoritmoknn.png);
+    position: absolute;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height:300%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.es {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 40px;
+}
+header h1 {
+padding-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.elemento:hover {
+    background-color: #edf3f3; 
+    color: #000000; 
+}
+.elemento {
+    background-color: #145075; 
+    color: #b48181; 
+    padding: 10px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.com {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+}
+
+.navegacion {
+    background-color: #119ff7;
+    height: 47px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+}
+.contenedor {
+    display: flex;
+}
+.contenedor aside{
+    background-color: rgb(236, 236, 236);
+    background-size: contain;
+    position: relative;
+}
+
+.contenedor aside p {
+    padding: 10px;
+}
+.contenedor main p {
+    padding: 10px;
+}
+.contenedor article {
+    padding: 10px;
+}
+.contenedor main{
+    background-color: rgb(209, 129, 25);
+    background-size: contain;
+}
+.ul{
+    padding: 20px;
+    position: relative; top:0px; left: 20px;
+}
+.ulo{
+    padding: 10px;
+    position: relative; left: 20px;
+}
+.h1 {
+    padding: 10px;
+}
+.h2 {
+    padding: 10px;
+}
+.ubicacion {
+padding: 10PX;
+position: relative;
+top: 20px;
+left:20%;
+}
+.ubi {
+    text-align: left;
+    padding: 10px;
+    background-color: #f73444;
+    color: #ffffff;
+
+}
+.li {
+    padding: 10px;
+}
+.cont {
+    padding: 10px;
+}
+
+</style>
+    
+    <header>
     <div class="contenedor1">
         <div class="imagen"></div>
         <center><h1 class="titulo">Material complementario</h1></center>
@@ -25,27 +161,246 @@
     </div>
     <div class="contenedor">
     <aside class="cont"><h1>Objetivo General</h1>
-    <p class="com"></p>
-    <h2 class="h2"></h2>
-    <ul class="ul">
-     
-        <li class="li com"></li>
-        <li class="li com"></li>
-        <li class="li com"></li>
-        <li class="li com"></li>
-        <li class="li com"></li>
-        <li class="li com"></li>
-        
-    </ul>    
+    <p class="com">esta es la parte en blanco, no entiendo porque sale tan espaciado</p>
+      
     </aside> 
-    <div class="horizontal"><hr></div>
+  <div class="horizontal"><hr></div>
     <main>
     <article>
         <header>
-            <h1></h1>
+            <h1>evaluaciones</h1>
+            <p class="com">aqui pones texto explicando la evaluacion</p>
             <p class="com"></p>
-            <p class="com"></p>
-        </header>
+            <d  id="Examen" class="tabcontent">
+                <p i><a href="">
+                    
+                  </a></p>
+                
+                  <p><a href="">  
+                 </a></p>
+                
+                  <p id="titulo1"><a href="">
+                  </a></p>
+                    <div class="container">
+                    <div class="row" style="background-color: white; opacity: .70;">
+                      <div class="col s12 render">
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <b>1.¿Cuál de las siguientes actividades  destruyen el ambiente?</b>
+                            <br>
+                              <input type="radio" name="op" value="A" onclick="captura(this.value,0)" id="test1" />
+                              <label for="test1">A. No que mar basuras </label>
+                            </p>
+                            
+                              <input type="radio" name="op" value="B" onclick="captura(this.value,0)" id="test2" />
+                              <label for="test2">B. Reciclar</label>
+                            </p>
+                            
+                              <input type="radio" name="op" value="C" onclick="captura(this.value,0)" id="test3" />
+                              <label for="test3">C. La tala de arboles</label>
+                            </p>
+                            
+                              <input type="radio" name="op" value="D" onclick="captura(this.value,0)" id="test4" />
+                              <label for="test4">D. Reutilizar</label>
+                            </p>
+                          </div>
+                          <div class="input-field col s6">
+                            <b>2. En cuál de los foros mundiales la educación ambiental adquiere importancia.</b>
+                            <br>
+                              <input type="radio" name="op2" value="A" onclick="captura(this.value,1)" id="test5" />
+                              <label for="test5">A. En los 70</label>
+                            </p>
+                            
+                              <input type="radio" name="op2" value="B" onclick="captura(this.value,1)" id="test6" />
+                              <label for="test6">B. En los 80.</label>
+                            </p>
+                            
+                              <input type="radio" name="op2" value="C" onclick="captura(this.value,1)" id="test7" />
+                              <label for="test7">C. En los 90</label>
+                            </p>
+                            
+                              <input type="radio" name="op2" value="D" onclick="captura(this.value,1)" id="test8">
+                              <label for="test8">D. En los tres anteriormente mencionados</label>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <b>3. Los objetivos de la educación ambiental en los niños son:</b>
+                            <br>
+                              <input type="radio" name="op3" value="A" onclick="captura(this.value,2)" id="test9" />
+                              <label for="test9">A. Concientizar, desarrollar su capacidad, participación.</label>
+                            </p>
+                            
+                              <input type="radio" name="op3" value="B" onclick="captura(this.value,2)" id="test10" />
+                              <label for="test10">B. Participación, hábitos, capacidad de evaluación.</label>
+                            </p>
+                            
+                              <input type="radio" name="op3" value="C" onclick="captura(this.value,2)" id="test11" />
+                              <label for="test11">C. Enfoque global, educación permanente, expandir los conocimientos, desarrollar su capacidad.</label>
+                            </p>
+                            
+                              <input type="radio" name="op3" value="D" onclick="captura(this.value,2)" id="test12" />
+                              <label for="test12">D. Concientizar, fomentar en los pequeños la participación, desarrollar su capacidad, expandir los conocimientos.</label>
+                            </p>
+                          </div>
+                          <div class="input-field col s6">
+                            <b>4. En qué fecha se celebra el día de la educación ambiental.</b>
+                            <br>
+                              <input type="radio" name="op4" value="A" onclick="captura(this.value,3)" id="test13" />
+                              <label for="test13">A. El 10 de agosto</label>
+                            </p>
+                            
+                              <input type="radio" name="op4" value="B" onclick="captura(this.value,3)" id="test14" />
+                              <label for="test14">B. El 26 de febrero</label>
+                            </p>
+                            
+                              <input type="radio" name="op4" value="C" onclick="captura(this.value,3)" id="test15" />
+                              <label for="test15">C. El 26 de enero</label>
+                            </p>
+                            
+                              <input type="radio" name="op4" value="D" onclick="captura(this.value,3)" id="test16" />
+                              <label for="test16">D. EL 27 de enero</label>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <b>5. ¿Cuál de las siguientes es una estrategia de educación ambiental?</b>
+                            <br>
+                              <input type="radio" name="op5" value="A" onclick="captura(this.value,4)" id="test17" />
+                              <label for="test17">A. Resolución de problemas</label>
+                            </p>
+                            
+                              <input type="radio" name="op5" value="B" onclick="captura(this.value,4)" id="test18" />
+                              <label for="test18">B. Enfoque global</label>
+                            </p>
+                            
+                              <input type="radio" name="op5" value="C" onclick="captura(this.value,4)" id="test19" />
+                              <label for="test19">C. Participación ciudadana</label>
+                            </p>
+                            
+                              <input type="radio" name="op5" value="D" onclick="captura(this.value,4)" id="test20" />
+                              <label for="test20">D. Todas las anteriores</label>
+                            </p>
+                          </div>
+                          <div class="input-field col s6">
+                            <b>6. El objetivó principal de la educación ambiental es:</b>
+                            <br>
+                              <input type="radio" name="op6" value="A" onclick="captura(this.value,5)" id="test21" />
+                              <label for="test21">A. Crear conciencia</label>
+                            </p>
+                            
+                              <input type="radio" name="op6" value="B" onclick="captura(this.value,5)" id="test22" />
+                              <label for="test22">B. Que las personas sean responsable</label>
+                            </p>
+                            
+                              <input type="radio" name="op6" value="C" onclick="captura(this.value,5)" id="test23" />
+                              <label for="test23">C. Crear más contaminación</label>
+                            </p>
+                            
+                              <input type="radio" name="op6" value="D" onclick="captura(this.value,5)" id="test24" />
+                              <label for="test24">D. Que las personas se vuelvan sucias</label>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <b>7. Para crear un modelo educativo transformador y participativo que se integre a las condiciones culturales económicas y sociales de vemos tener en cuenta las siguientes condiciones.</b>
+                            <br>
+                              <input type="radio" name="op7" value="A" onclick="captura(this.value,6)" id="test25" />
+                              <label for="test25">A. Buscar la solución de problemas, ser responsables.</label>
+                            </p>
+                            
+                              <input type="radio" name="op7" value="B" onclick="captura(this.value,6)" id="test26" />
+                              <label for="test26">B. Crear conciencia, promover valores, definir criterios y normas de actuación.</label>
+                            </p>
+                            
+                              <input type="radio" name="op7" value="C" onclick="captura(this.value,6)" id="test27" />
+                              <label for="test27">C. Crear conciencia, Promover valores, arrojar basuras.</label>
+                            </p>
+                            
+                              <input type="radio" name="op7" value="D" onclick="captura(this.value,6)" id="test28" />
+                              <label for="test28">D. Orientar los procesos de toma de decisiones, ser amables, buscar soluciones.</label>
+                            </p>
+                          </div>
+                          <div class="input-field col s6">
+                            <b>8. según la tabla cual es el país más contaminado del mundo </b>
+                            <br>
+                              <input type="radio" name="op8" value="A" onclick="captura(this.value,7)" id="test29" />
+                              <label for="test29">A. Estados unidos </label>
+                            </p>
+                            
+                              <input type="radio" name="op8" value="B" onclick="captura(this.value,7)" id="test30" />
+                              <label for="test30">B. China</label>
+                            </p>
+                            
+                              <input type="radio" name="op8" value="C" onclick="captura(this.value,7)" id="test31" />
+                              <label for="test31">C. Sudáfrica</label>
+                            </p>
+                            
+                              <input type="radio" name="op8" value="D" onclick="captura(this.value,7)" id="test32" />
+                              <label for="test32">D. India</label>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="input-field col s6">
+                            <b>9. ¿Qué es educación ambiental?</b>
+                            <br>
+                              <input type="radio" name="op9" value="A" onclick="captura(this.value,8)" id="test33" />
+                              <label for="test33">A. Una disciplina que se puede aplicar en todas las asignaturas que se cursan en los planes de educación.</label>
+                            </p>
+                            
+                              <input type="radio" name="op9" value="B" onclick="captura(this.value,8)" id="test34" />
+                              <label for="test34">B. Proceso continuo, interactivo e integrador, mediante el cual el ser humano adquiere conocimientos.</label>
+                            </p>
+                            
+                              <input type="radio" name="op9" value="C" onclick="captura(this.value,8)" id="test35" />
+                              <label for="test35">C. Es un proceso a través del cual se busca crear conocimientos y enseñanzas a la ciudadanía para proteger nuestro entorno natural.</label>
+                            </p>
+                            
+                              <input type="radio" name="op9" value="D" onclick="captura(this.value,8)" id="test36" />
+                              <label for="test36">D. Ninguna es correcta</label>
+                            </p>
+                          </div>
+                          <div class="input-field col s6">
+                            <b>10. Cuáles son los tipos de educación ambiental</b>
+                            <br>
+                              <input type="radio" name="op10" value="A" onclick="captura(this.value,9)" id="test37" />
+                              <label for="test37">A. Conservacionista, renovable, biológica</label>
+                            </p>
+                            
+                              <input type="radio" name="op10" value="B" onclick="captura(this.value,9)" id="test38" />
+                              <label for="test38">B. Conservacionista, biologistica, sustentable</label>
+                            </p>
+                            
+                              <input type="radio" name="op10" value="C" onclick="captura(this.value,9)" id="test39" />
+                              <label for="test39">C. Conservacionista, sustentable, renovable</label>
+                            </p>
+                            
+                              <input type="radio" name="op10" value="D" onclick="captura(this.value,9)" id="test40" />
+                              <label for="test40">D. Conservacionista, biologista, sustentable</label>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>    
+                    <div class="row center" style="background-color: rgb(250, 216, 79); opacity: .80;">
+                      <center><div class="input-field col s6">
+                       <a class="waves-effect waves-light btn orange" onclick="mostrar()"> <button> Ver marcadas </button> </a>
+                        <input type="text" id="t1" disabled />
+                      </div>
+
+                      <br >
+
+                      <div class="input-field col s6">
+                        <a class="waves-effect waves-light btn orange" onclick="lanota()"> <button> Ver nota </button> </a>
+                        <input type="text" id="t2" disabled />
+                      </div></center>
+                    </div>
+                  </div>
+                
         <article>
         <h2></h2>
             <p class="com"></p>
@@ -53,21 +408,14 @@
             <h2></h2>
             <p class="com"></h2>
             <p class="com"></p>
-            <ul class="ulo">
-                <li class="com"C
-                    <ul class="ulo">
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </li>
-            </div>
+        </div>
+            
             <footer class="ubi">
                 <p>@algoritmia&copy; 2019 • Terms & Conditions</p>
             </footer>
         
         
-    
-</main>
-    </div>
+    </main>
+   
 </body>
 </html>
