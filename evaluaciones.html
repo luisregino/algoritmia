@@ -1,156 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
-<script src="Java.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+    <script src="Java.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-<style>
-    *{
-    padding: 0px;
-    margin: 0px;
-}
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
 
-.horizontal {
-    background-color: #000000;
-    margin: 0px;
-    border: 40px;
-}
-.contenedor1 {
-    position: relative;
-}
-.titulo {
-    font-family: 'Exo 2', sans-serif;
-    padding: 10px;
-    font-size: 60px; 
-    color: rgb(255, 8, 0);
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    font-weight: bold; 
-    z-index: 1;
-    position: relative;
-}
-.imagen {
-    content: "";
-    background-image: url(https://iaexpert.academy/wp-content/uploads/2021/05/algoritmoknn.png);
-    position: absolute;
-    background-size: contain;
-    top: 0;
-    left: 0;
-    width: 300%;
-    height:300%;
-    opacity: 0.8;
-    z-index: -1;
-}
+        .horizontal {
+            background-color: #000000;
+            margin: 0px;
+            border: 40px;
+        }
 
-.es {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 40px;
-}
-header h1 {
-padding-top: 20px;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-.elemento:hover {
-    background-color: #edf3f3; 
-    color: #000000; 
-}
-.elemento {
-    background-color: #145075; 
-    color: #b48181; 
-    padding: 10px;
-    transition: background-color 0.5s, color 0.5s;
-}
-.com {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-}
+        .contenedor1 {
+            position: relative;
+        }
 
-.navegacion {
-    background-color: #119ff7;
-    height: 47px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navegacion a {
-    text-decoration: none;
-    color: white;
-    padding: 14px;
-}
-.contenedor {
-    display: flex;
-}
-.contenedor aside{
-    background-color: rgb(236, 236, 236);
-    background-size: contain;
-    position: relative;
-}
+        .titulo {
+            font-family: 'Exo 2', sans-serif;
+            padding: 10px;
+            font-size: 60px;
+            color: rgb(255, 8, 0);
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            z-index: 1;
+            position: relative;
+        }
 
-.contenedor aside p {
-    padding: 10px;
-}
-.contenedor main p {
-    padding: 10px;
-}
-.contenedor article {
-    padding: 10px;
-}
-.contenedor main{
-    background-color: rgb(209, 129, 25);
-    background-size: contain;
-}
-.ul{
-    padding: 20px;
-    position: relative; top:0px; left: 20px;
-}
-.ulo{
-    padding: 10px;
-    position: relative; left: 20px;
-}
-.h1 {
-    padding: 10px;
-}
-.h2 {
-    padding: 10px;
-}
-.ubicacion {
-padding: 10PX;
-position: relative;
-top: 20px;
-left:20%;
-}
-.ubi {
-    text-align: left;
-    padding: 10px;
-    background-color: #f73444;
-    color: #ffffff;
+        .imagen {
+            content: "";
+            background-image: url(https://iaexpert.academy/wp-content/uploads/2021/05/algoritmoknn.png);
+            position: absolute;
+            background-size: contain;
+            top: 0;
+            left: 0;
+            width: 300%;
+            height: 300%;
+            opacity: 0.8;
+            z-index: -1;
+        }
 
-}
-.li {
-    padding: 10px;
-}
-.cont {
-    padding: 10px;
-}
+        .es {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 40px;
+        }
 
-</style>
-    
+        header h1 {
+            padding-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .elemento:hover {
+            background-color: #edf3f3;
+            color: #000000;
+        }
+
+        .elemento {
+            background-color: #145075;
+            color: #b48181;
+            padding: 10px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .com {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 18px;
+        }
+
+        .navegacion {
+            background-color: #119ff7;
+            height: 47px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navegacion a {
+            text-decoration: none;
+            color: white;
+            padding: 14px;
+        }
+
+        .contenedor {
+            display: flex;
+        }
+
+        .contenedor aside {
+            background-color: rgb(236, 236, 236);
+            background-size: contain;
+            position: relative;
+        }
+
+        .contenedor aside p {
+            padding: 10px;
+        }
+
+        .contenedor main p {
+            padding: 10px;
+        }
+
+        .contenedor article {
+            padding: 10px;
+        }
+
+        .contenedor main {
+            background-color: rgb(209, 129, 25);
+            background-size: contain;
+        }
+
+        .ul {
+            padding: 20px;
+            position: relative;
+            top: 0px;
+            left: 20px;
+        }
+
+        .ulo {
+            padding: 10px;
+            position: relative;
+            left: 20px;
+        }
+
+        .h1 {
+            padding: 10px;
+        }
+
+        .h2 {
+            padding: 10px;
+        }
+
+        .ubicacion {
+            padding: 10PX;
+            position: relative;
+            top: 20px;
+            left: 20%;
+        }
+
+        .ubi {
+            text-align: left;
+            padding: 10px;
+            background-color: #f73444;
+            color: #ffffff;
+
+        }
+
+        .li {
+            padding: 10px;
+        }
+
+        .cont {
+            padding: 10px;
+        }
+    </style>
+
     <header>
-    <div class="contenedor1">
-        <div class="imagen"></div>
-        <center><h1 class="titulo">Material complementario</h1></center>
-    </div>   
-</header> 
+        <div class="contenedor1">
+            <div class="imagen"></div>
+            <center>
+                <h1 class="titulo">Material complementario</h1>
+            </center>
+        </div>
+    </header>
     <div class="navegacion">
         <a class="elemento" href="inicio.html">Inicio</a>
         <a class="elemento" href="contenidos.html">Contenido</a>
@@ -160,262 +188,332 @@ left:20%;
         <a class="elemento" href="creditos.html">Creditos</a>
     </div>
     <div class="contenedor">
-    <aside class="cont"><h1>Objetivo General</h1>
-    <p class="com">esta es la parte en blanco, no entiendo porque sale tan espaciado</p>
-      
-    </aside> 
-  <div class="horizontal"><hr></div>
-    <main>
-    <article>
-        <header>
-            <h1>evaluaciones</h1>
-            <p class="com">aqui pones texto explicando la evaluacion</p>
-            <p class="com"></p>
-            <d  id="Examen" class="tabcontent">
-                <p i><a href="">
-                    
-                  </a></p>
-                
-                  <p><a href="">  
-                 </a></p>
-                
-                  <p id="titulo1"><a href="">
-                  </a></p>
-                    <div class="container">
-                    <div class="row" style="background-color: white; opacity: .70;">
-                      <div class="col s12 render">
-                        <div class="row">
-                          <div class="input-field col s6">
-                            <b>1.¿Cuál de las siguientes actividades  destruyen el ambiente?</b>
-                            <br>
-                              <input type="radio" name="op" value="A" onclick="captura(this.value,0)" id="test1" />
-                              <label for="test1">A. No que mar basuras </label>
-                            </p>
-                            
-                              <input type="radio" name="op" value="B" onclick="captura(this.value,0)" id="test2" />
-                              <label for="test2">B. Reciclar</label>
-                            </p>
-                            
-                              <input type="radio" name="op" value="C" onclick="captura(this.value,0)" id="test3" />
-                              <label for="test3">C. La tala de arboles</label>
-                            </p>
-                            
-                              <input type="radio" name="op" value="D" onclick="captura(this.value,0)" id="test4" />
-                              <label for="test4">D. Reutilizar</label>
-                            </p>
-                          </div>
-                          <div class="input-field col s6">
-                            <b>2. En cuál de los foros mundiales la educación ambiental adquiere importancia.</b>
-                            <br>
-                              <input type="radio" name="op2" value="A" onclick="captura(this.value,1)" id="test5" />
-                              <label for="test5">A. En los 70</label>
-                            </p>
-                            
-                              <input type="radio" name="op2" value="B" onclick="captura(this.value,1)" id="test6" />
-                              <label for="test6">B. En los 80.</label>
-                            </p>
-                            
-                              <input type="radio" name="op2" value="C" onclick="captura(this.value,1)" id="test7" />
-                              <label for="test7">C. En los 90</label>
-                            </p>
-                            
-                              <input type="radio" name="op2" value="D" onclick="captura(this.value,1)" id="test8">
-                              <label for="test8">D. En los tres anteriormente mencionados</label>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s6">
-                            <b>3. Los objetivos de la educación ambiental en los niños son:</b>
-                            <br>
-                              <input type="radio" name="op3" value="A" onclick="captura(this.value,2)" id="test9" />
-                              <label for="test9">A. Concientizar, desarrollar su capacidad, participación.</label>
-                            </p>
-                            
-                              <input type="radio" name="op3" value="B" onclick="captura(this.value,2)" id="test10" />
-                              <label for="test10">B. Participación, hábitos, capacidad de evaluación.</label>
-                            </p>
-                            
-                              <input type="radio" name="op3" value="C" onclick="captura(this.value,2)" id="test11" />
-                              <label for="test11">C. Enfoque global, educación permanente, expandir los conocimientos, desarrollar su capacidad.</label>
-                            </p>
-                            
-                              <input type="radio" name="op3" value="D" onclick="captura(this.value,2)" id="test12" />
-                              <label for="test12">D. Concientizar, fomentar en los pequeños la participación, desarrollar su capacidad, expandir los conocimientos.</label>
-                            </p>
-                          </div>
-                          <div class="input-field col s6">
-                            <b>4. En qué fecha se celebra el día de la educación ambiental.</b>
-                            <br>
-                              <input type="radio" name="op4" value="A" onclick="captura(this.value,3)" id="test13" />
-                              <label for="test13">A. El 10 de agosto</label>
-                            </p>
-                            
-                              <input type="radio" name="op4" value="B" onclick="captura(this.value,3)" id="test14" />
-                              <label for="test14">B. El 26 de febrero</label>
-                            </p>
-                            
-                              <input type="radio" name="op4" value="C" onclick="captura(this.value,3)" id="test15" />
-                              <label for="test15">C. El 26 de enero</label>
-                            </p>
-                            
-                              <input type="radio" name="op4" value="D" onclick="captura(this.value,3)" id="test16" />
-                              <label for="test16">D. EL 27 de enero</label>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s6">
-                            <b>5. ¿Cuál de las siguientes es una estrategia de educación ambiental?</b>
-                            <br>
-                              <input type="radio" name="op5" value="A" onclick="captura(this.value,4)" id="test17" />
-                              <label for="test17">A. Resolución de problemas</label>
-                            </p>
-                            
-                              <input type="radio" name="op5" value="B" onclick="captura(this.value,4)" id="test18" />
-                              <label for="test18">B. Enfoque global</label>
-                            </p>
-                            
-                              <input type="radio" name="op5" value="C" onclick="captura(this.value,4)" id="test19" />
-                              <label for="test19">C. Participación ciudadana</label>
-                            </p>
-                            
-                              <input type="radio" name="op5" value="D" onclick="captura(this.value,4)" id="test20" />
-                              <label for="test20">D. Todas las anteriores</label>
-                            </p>
-                          </div>
-                          <div class="input-field col s6">
-                            <b>6. El objetivó principal de la educación ambiental es:</b>
-                            <br>
-                              <input type="radio" name="op6" value="A" onclick="captura(this.value,5)" id="test21" />
-                              <label for="test21">A. Crear conciencia</label>
-                            </p>
-                            
-                              <input type="radio" name="op6" value="B" onclick="captura(this.value,5)" id="test22" />
-                              <label for="test22">B. Que las personas sean responsable</label>
-                            </p>
-                            
-                              <input type="radio" name="op6" value="C" onclick="captura(this.value,5)" id="test23" />
-                              <label for="test23">C. Crear más contaminación</label>
-                            </p>
-                            
-                              <input type="radio" name="op6" value="D" onclick="captura(this.value,5)" id="test24" />
-                              <label for="test24">D. Que las personas se vuelvan sucias</label>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s6">
-                            <b>7. Para crear un modelo educativo transformador y participativo que se integre a las condiciones culturales económicas y sociales de vemos tener en cuenta las siguientes condiciones.</b>
-                            <br>
-                              <input type="radio" name="op7" value="A" onclick="captura(this.value,6)" id="test25" />
-                              <label for="test25">A. Buscar la solución de problemas, ser responsables.</label>
-                            </p>
-                            
-                              <input type="radio" name="op7" value="B" onclick="captura(this.value,6)" id="test26" />
-                              <label for="test26">B. Crear conciencia, promover valores, definir criterios y normas de actuación.</label>
-                            </p>
-                            
-                              <input type="radio" name="op7" value="C" onclick="captura(this.value,6)" id="test27" />
-                              <label for="test27">C. Crear conciencia, Promover valores, arrojar basuras.</label>
-                            </p>
-                            
-                              <input type="radio" name="op7" value="D" onclick="captura(this.value,6)" id="test28" />
-                              <label for="test28">D. Orientar los procesos de toma de decisiones, ser amables, buscar soluciones.</label>
-                            </p>
-                          </div>
-                          <div class="input-field col s6">
-                            <b>8. según la tabla cual es el país más contaminado del mundo </b>
-                            <br>
-                              <input type="radio" name="op8" value="A" onclick="captura(this.value,7)" id="test29" />
-                              <label for="test29">A. Estados unidos </label>
-                            </p>
-                            
-                              <input type="radio" name="op8" value="B" onclick="captura(this.value,7)" id="test30" />
-                              <label for="test30">B. China</label>
-                            </p>
-                            
-                              <input type="radio" name="op8" value="C" onclick="captura(this.value,7)" id="test31" />
-                              <label for="test31">C. Sudáfrica</label>
-                            </p>
-                            
-                              <input type="radio" name="op8" value="D" onclick="captura(this.value,7)" id="test32" />
-                              <label for="test32">D. India</label>
-                            </p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="input-field col s6">
-                            <b>9. ¿Qué es educación ambiental?</b>
-                            <br>
-                              <input type="radio" name="op9" value="A" onclick="captura(this.value,8)" id="test33" />
-                              <label for="test33">A. Una disciplina que se puede aplicar en todas las asignaturas que se cursan en los planes de educación.</label>
-                            </p>
-                            
-                              <input type="radio" name="op9" value="B" onclick="captura(this.value,8)" id="test34" />
-                              <label for="test34">B. Proceso continuo, interactivo e integrador, mediante el cual el ser humano adquiere conocimientos.</label>
-                            </p>
-                            
-                              <input type="radio" name="op9" value="C" onclick="captura(this.value,8)" id="test35" />
-                              <label for="test35">C. Es un proceso a través del cual se busca crear conocimientos y enseñanzas a la ciudadanía para proteger nuestro entorno natural.</label>
-                            </p>
-                            
-                              <input type="radio" name="op9" value="D" onclick="captura(this.value,8)" id="test36" />
-                              <label for="test36">D. Ninguna es correcta</label>
-                            </p>
-                          </div>
-                          <div class="input-field col s6">
-                            <b>10. Cuáles son los tipos de educación ambiental</b>
-                            <br>
-                              <input type="radio" name="op10" value="A" onclick="captura(this.value,9)" id="test37" />
-                              <label for="test37">A. Conservacionista, renovable, biológica</label>
-                            </p>
-                            
-                              <input type="radio" name="op10" value="B" onclick="captura(this.value,9)" id="test38" />
-                              <label for="test38">B. Conservacionista, biologistica, sustentable</label>
-                            </p>
-                            
-                              <input type="radio" name="op10" value="C" onclick="captura(this.value,9)" id="test39" />
-                              <label for="test39">C. Conservacionista, sustentable, renovable</label>
-                            </p>
-                            
-                              <input type="radio" name="op10" value="D" onclick="captura(this.value,9)" id="test40" />
-                              <label for="test40">D. Conservacionista, biologista, sustentable</label>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>    
-                    <div class="row center" style="background-color: rgb(250, 216, 79); opacity: .80;">
-                      <center><div class="input-field col s6">
-                       <a class="waves-effect waves-light btn orange" onclick="mostrar()"> <button> Ver marcadas </button> </a>
-                        <input type="text" id="t1" disabled />
-                      </div>
+        <aside class="cont">
+            <h1>Objetivo General</h1>
+            <p class="com">El objetivo general de estas preguntas desarrolladas es evaluar el conocimiento y comprensión
+                de conceptos fundamentales en el campo de la algoritmia. Al desarrollar respuestas a estas preguntas,
+                los estudiantes o participantes deben demostrar una comprensión sólida de los principios básicos de los
+                algoritmos, su función, eficiencia y conceptos relacionados. Las preguntas abarcan temas como la
+                definición de algoritmo, la complejidad computacional, la recursividad, la notación Big-O, la
+                eficiencia, la diferencia entre algoritmo y programa, entre otros.
 
-                      <br >
+                Este conjunto de preguntas busca evaluar la capacidad de los participantes para aplicar estos conceptos
+                a situaciones prácticas y entender cómo se utilizan los algoritmos para resolver problemas. Además, al
+                incluir opciones de respuesta marcadas con "x", se facilita la evaluación objetiva, permitiendo a los
+                evaluadores identificar claramente si los participantes han comprendido correctamente los conceptos
+                clave o no.</p>
 
-                      <div class="input-field col s6">
-                        <a class="waves-effect waves-light btn orange" onclick="lanota()"> <button> Ver nota </button> </a>
-                        <input type="text" id="t2" disabled />
-                      </div></center>
-                    </div>
-                  </div>
-                
-        <article>
-        <h2></h2>
-            <p class="com"></p>
-           
-            <h2></h2>
-            <p class="com"></h2>
-            <p class="com"></p>
+        </aside>
+        <div class="horizontal">
+            <hr>
         </div>
-            
-            <footer class="ubi">
-                <p>@algoritmia&copy; 2019 • Terms & Conditions</p>
-            </footer>
-        
-        
+        <main>
+            <article>
+                <header>
+                    <h1>Evaluación</h1>
+                    <p class="com">Resolver la siguiente evalución de selección multiple, el tema de la evalucion es los
+                        algoritmos. leer y analalizar cada pregunta antes responder.</p>
+                    <p class="com"></p>
+                    <d id="Examen" class="tabcontent">
+                        <p i><a href="">
+
+                            </a></p>
+
+                        <p><a href="">
+                            </a></p>
+
+                        <p id="titulo1"><a href="">
+                            </a></p>
+                        <div class="container">
+                            <div class="row" style="background-color: white; opacity: .70;">
+                                <div class="col s12 render">
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <b>1.¿Que es un algoritmo?</b>
+                                            <br>
+                                            <input type="radio" name="op" value="A" onclick="captura(this.value,0)"
+                                                id="test1" />
+                                            <label for="test1">A. Una herramienta de jardinera </label>
+                                            </p>
+
+                                            <input type="radio" name="op" value="B" onclick="captura(this.value,0)"
+                                                id="test2" />
+                                            <label for="test2">B. Hacer cafe </label>
+                                            </p>
+
+                                            <input type="radio" name="op" value="C" onclick="captura(this.value,0)"
+                                                id="test3" />
+                                            <label for="test3">C. Una secuencia para resolver un problema</label>
+                                            </p>
+
+                                            <input type="radio" name="op" value="D" onclick="captura(this.value,0)"
+                                                id="test4" />
+                                            <label for="test4">D. Una especie de animal marino</label>
+                                            </p>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <b>2. ¿cual es el proposito de un algoritmo?</b>
+                                            <br>
+                                            <input type="radio" name="op2" value="A" onclick="captura(this.value,1)"
+                                                id="test5" />
+                                            <label for="test5">A. Hacer cafe</label>
+                                            </p>
+
+                                            <input type="radio" name="op2" value="B" onclick="captura(this.value,1)"
+                                                id="test6" />
+                                            <label for="test6">B. Una secuencia de paso para resolver un
+                                                problema</label>
+                                            </p>
+
+                                            <input type="radio" name="op2" value="C" onclick="captura(this.value,1)"
+                                                id="test7" />
+                                            <label for="test7">C. Bailar salsa</label>
+                                            </p>
+
+                                            <input type="radio" name="op2" value="D" onclick="captura(this.value,1)"
+                                                id="test8">
+                                            <label for="test8">D. Resolver un problema o realizar una tarea</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <b>3. ¿Que es la complejidad computacional de un algoritmo?</b>
+                                            <br>
+                                            <input type="radio" name="op3" value="A" onclick="captura(this.value,2)"
+                                                id="test9" />
+                                            <label for="test9">A. La dificultad de entenderlo</label>
+                                            </p>
+
+                                            <input type="radio" name="op3" value="B" onclick="captura(this.value,2)"
+                                                id="test10" />
+                                            <label for="test10">B. Resolver un problema o realizar una tarea</label>
+                                            </p>
+
+                                            <input type="radio" name="op3" value="C" onclick="captura(this.value,2)"
+                                                id="test11" />
+                                            <label for="test11">C. El umero de pasos que tiene</label>
+                                            </p>
+
+                                            <input type="radio" name="op3" value="D" onclick="captura(this.value,2)"
+                                                id="test12" />
+                                            <label for="test12">D. El tiempo y el espacio que requiere para
+                                                ejecutarse</label>
+                                            </p>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <b>4. ¿Que es la recursividad en algoritmia?</b>
+                                            <br>
+                                            <input type="radio" name="op4" value="A" onclick="captura(this.value,3)"
+                                                id="test13" />
+                                            <label for="test13">A. Un bucle infinito</label>
+                                            </p>
+
+                                            <input type="radio" name="op4" value="B" onclick="captura(this.value,3)"
+                                                id="test14" />
+                                            <label for="test14">B. Una ecuacion matematica</label>
+                                            </p>
+
+                                            <input type="radio" name="op4" value="C" onclick="captura(this.value,3)"
+                                                id="test15" />
+                                            <label for="test15">C. Una llamada asi mismo</label>
+                                            </p>
+
+                                            <input type="radio" name="op4" value="D" onclick="captura(this.value,3)"
+                                                id="test16" />
+                                            <label for="test16">D. Un numero binario</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <b>5. ¿Cual es la diferencia entre un algoritmo y un programa?</b>
+                                            <br>
+                                            <input type="radio" name="op5" value="A" onclick="captura(this.value,4)"
+                                                id="test17" />
+                                            <label for="test17">A. No hay ninguna diferencia</label>
+                                            </p>
+
+                                            <input type="radio" name="op5" value="B" onclick="captura(this.value,4)"
+                                                id="test18" />
+                                            <label for="test18">B. Un algoritmo se basa en estructuras y el programa se
+                                                basa en los lenguaes de las estructuras</label>
+                                            </p>
+
+                                            <input type="radio" name="op5" value="C" onclick="captura(this.value,4)"
+                                                id="test19" />
+                                            <label for="test19">C. Un algoritmo se basa en binaria y un programa se base
+                                                en ecuaciones matematicas</label>
+                                            </p>
+
+                                            <input type="radio" name="op5" value="D" onclick="captura(this.value,4)"
+                                                id="test20" />
+                                            <label for="test20">D. Un algoritmo es un conjunto de pasos, un programa es
+                                                su implementación en un lenguaje de programación</label>
+                                            </p>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <b>6. ¿Qué es la notación Big-O en análisis de algoritmos?</b>
+                                            <br>
+                                            <input type="radio" name="op6" value="A" onclick="captura(this.value,5)"
+                                                id="test21" />
+                                            <label for="test21">A. Una notacion para describir el peor caso de ejecucion
+                                                de un algoritmo</label>
+                                            </p>
+
+                                            <input type="radio" name="op6" value="B" onclick="captura(this.value,5)"
+                                                id="test22" />
+                                            <label for="test22">B. Una marca de relojes</label>
+                                            </p>
+
+                                            <input type="radio" name="op6" value="C" onclick="captura(this.value,5)"
+                                                id="test23" />
+                                            <label for="test23">C. Una notacion musical</label>
+                                            </p>
+
+                                            <input type="radio" name="op6" value="D" onclick="captura(this.value,5)"
+                                                id="test24" />
+                                            <label for="test24">D. Todas las anteriores</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <b>7. ¿Qué significa la eficiencia de un algoritmo?</b>
+                                            <br>
+                                            <input type="radio" name="op7" value="A" onclick="captura(this.value,6)"
+                                                id="test25" />
+                                            <label for="test25">A. Que siempre es correcto</label>
+                                            </p>
+
+                                            <input type="radio" name="op7" value="B" onclick="captura(this.value,6)"
+                                                id="test26" />
+                                            <label for="test26">B. Que utiliza la menor cantidad de recursos
+                                                posibles</label>
+                                            </p>
+
+                                            <input type="radio" name="op7" value="C" onclick="captura(this.value,6)"
+                                                id="test27" />
+                                            <label for="test27">C. Que es facil de entender</label>
+                                            </p>
+
+                                            <input type="radio" name="op7" value="D" onclick="captura(this.value,6)"
+                                                id="test28" />
+                                            <label for="test28">D. Ninguna de las anteriores</label>
+                                            </p>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <b>8. ¿Qué es la búsqueda binaria? </b>
+                                            <br>
+                                            <input type="radio" name="op8" value="A" onclick="captura(this.value,7)"
+                                                id="test29" />
+                                            <label for="test29">A.Un algoritmo para buscar en una lista ordenada
+                                                dividiéndola a la mitad repetidamente </label>
+                                            </p>
+
+                                            <input type="radio" name="op8" value="B" onclick="captura(this.value,7)"
+                                                id="test30" />
+                                            <label for="test30">B. Buscar algo ccon una linterna</label>
+                                            </p>
+
+                                            <input type="radio" name="op8" value="C" onclick="captura(this.value,7)"
+                                                id="test31" />
+                                            <label for="test31">C. Un juego de mesa</label>
+                                            </p>
+
+                                            <input type="radio" name="op8" value="D" onclick="captura(this.value,7)"
+                                                id="test32" />
+                                            <label for="test32">D. Una ecuacion lineal</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <b>9.¿Cuál es el concepto de "divide y vencerás" en algoritmia? </b>
+                                            <br>
+                                            <input type="radio" name="op9" value="A" onclick="captura(this.value,8)"
+                                                id="test33" />
+                                            <label for="test33">A. Evitar los problemas en lugar de enfrentarlos</label>
+                                            </p>
+
+                                            <input type="radio" name="op9" value="B" onclick="captura(this.value,8)"
+                                                id="test34" />
+                                            <label for="test34">B. Multiplicar para conquistar</label>
+                                            </p>
+
+                                            <input type="radio" name="op9" value="C" onclick="captura(this.value,8)"
+                                                id="test35" />
+                                            <label for="test35">C. Dividir un problema en partes más pequeñas y resolver
+                                                cada parte por separado</label>
+                                            </p>
+
+                                            <input type="radio" name="op9" value="D" onclick="captura(this.value,8)"
+                                                id="test36" />
+                                            <label for="test36">D. Ninguna es correcta</label>
+                                            </p>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <b>10. ¿Qué es un bucle en algoritmia?</b>
+                                            <br>
+                                            <input type="radio" name="op10" value="A" onclick="captura(this.value,9)"
+                                                id="test37" />
+                                            <label for="test37">A. Un error en el codigo</label>
+                                            </p>
+
+                                            <input type="radio" name="op10" value="B" onclick="captura(this.value,9)"
+                                                id="test38" />
+                                            <label for="test38">B. un tipo de silla</label>
+                                            </p>
+
+                                            <input type="radio" name="op10" value="C" onclick="captura(this.value,9)"
+                                                id="test39" />
+                                            <label for="test39">C. Todas las anteriores</label>
+                                            </p>
+
+                                            <input type="radio" name="op10" value="D" onclick="captura(this.value,9)"
+                                                id="test40" />
+                                            <label for="test40">D. Una repeticion dde pasos</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row center" style="background-color: rgb(250, 216, 79); opacity: .80;">
+                                <center>
+                                    <div class="input-field col s6">
+                                        <a class="waves-effect waves-light btn orange" onclick="mostrar()"> <button> Ver
+                                                marcadas </button> </a>
+                                        <input type="text" id="t1" disabled />
+                                    </div>
+
+                                    <br>
+
+                                    <div class="input-field col s6">
+                                        <a class="waves-effect waves-light btn orange" onclick="lanota()"> <button> Ver
+                                                nota </button> </a>
+                                        <input type="text" id="t2" disabled />
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+
+                        <article>
+                            <h2></h2>
+                            <p class="com"></p>
+
+                            <h2></h2>
+                            <p class="com">
+                                </h2>
+                            <p class="com"></p>
+    </div>
+
+    <footer class="ubi">
+        <p>@algoritmia&copy; 2019 • Terms & Conditions</p>
+    </footer>
+
+
     </main>
-   
+
 </body>
+
 </html>
