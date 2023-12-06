@@ -9,7 +9,144 @@
     <title>CONTENIDOS</title>
     <link rel="stylesheet" href="estilos/inicio.css">
 </head>
-<body><header>
+<body>
+  <style>
+    *{
+padding: 0px;
+margin: 0px;
+}
+
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.imagen {
+    content: "";
+    background-image: url(https://iaexpert.academy/wp-content/uploads/2021/05/algoritmoknn.png);
+    position: absolute;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height:300%;
+    opacity: 0.8;
+    z-index: -1;
+    }
+.horizontal {
+background-color: #000000;
+margin: 0px;
+border: 40px;
+}
+
+
+.titulo {
+font-family: Georgia, 'Times New Roman', Times, serif;
+padding: 10px;
+font-size: 60px; 
+color: rgb(255, 8, 0);
+text-transform: uppercase;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+font-weight: bold; 
+z-index: 1;
+position: relative;
+}
+
+
+header h1 {
+padding-top: 20px;
+}
+a {
+text-decoration: none;
+color: white;
+}
+.elemento:hover {
+background-color: #edf3f3; 
+color: #000000; 
+}
+.elemento {
+background-color: rgb(31, 117, 20); 
+color: #b48181; 
+padding: 10px;
+transition: background-color 0.5s, color 0.5s;
+}
+.com {
+font-family: 'Exo 2', sans-serif;
+font-size: 18px;
+}
+
+.navegacion {
+background-color: #075a12;
+height: 47px;
+text-align: left;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.navegacion a {
+text-decoration: none;
+color: white;
+padding: 14px;
+}
+.contenedor {
+display: flex;
+}
+.contenedor aside{
+background-color: rgb(255, 254, 254);
+background-size: contain;
+width: 1800px;
+}
+
+.contenedor aside p {
+padding: 10px;
+}
+.contenedor main p {
+padding: 10px;
+}
+.contenedor article {
+padding: 10px;
+}
+.contenedor main{
+background-color: rgb(25, 209, 139);
+background-size: contain;
+}
+.ul{
+padding: 20px;
+position: relative; top:0px; left: 20px;
+}
+.ulo{
+padding: 10px;
+position: relative; left: 20px;
+}
+.h1 {
+padding: 10px;
+}
+.h2 {
+padding: 10px;
+}
+.ubicacion {
+padding: 10PX;
+position: relative;
+top: 20px;
+left:20%;
+border-radius: 10px;
+box-shadow:5px 5px 5px #000000;
+}
+.ubi {
+text-align: left;
+padding: 10px;
+background-color:  #075a12;
+color: #ffffff;
+
+}
+.li {
+padding: 10px;
+}
+.cont {
+padding: 10px;
+}
+</style>
+  
+  <header>
     <div class="contenedor1">
         <div class="imagen"></div>
         <center><h1 class="titulo">CONTENIDOS</h1></center>
@@ -36,13 +173,12 @@
         <li class="li com">Aplicaciones: Los algoritmos se utilizan en una amplia variedad de aplicaciones, desde la resolución de problemas matemáticos hasta la optimización de rutas en sistemas de navegación, la clasificación de datos en aprendizaje automático y mucho más.</li>
     </ul>    
     </aside> 
+    <br>
     <div class="horizontal"><hr></div>
     <main>
     <article>
         <header>
             <h1>ALGORITMIA</h1>
-            <p class="com">Algoritmia</p>
-            <p class="com">2023</p>
         </header>
         <article>
         <h2>EXPLOREANDO EL MUNDO DE LA ALGORITMIA</h2>
@@ -55,7 +191,7 @@
                 href="https://ezproxyucor.unicordoba.edu.co:2161/Record/oai:ojs.journal.universidadean.edu.co:articleojs-874"
                 target="BLANK">Click aqui</a> para mas información</p>
             <p class="com">  </p>
-            <h2><b>partes de los algoritmos de programaciòn</h2>
+            <h1><b>partes de los algoritmos de programaciòn</h1>
             <ul class="ulo">
                 <li class="com">Estudiantes, profesionales de la informática, entusiastas de la tecnología y cualquier persona interesada en comprender la base lógica detrás de las soluciones digitales. No se requieren conocimientos técnicos previos; esta presentación es accesible para todos los niveles de experiencia.
 
@@ -98,10 +234,10 @@
         con su resolución</li>
       </div>
     </ol>
-    <h2>Algoritmos y estructras de programaciòn</h2>
+    <h1>Algoritmos y estructras de programaciòn</h1>
   
     <div class="recuadro" width="45px">
-    <h3>Fases de creaciòn de un programa</h3>
+    <h1>Fases de creaciòn de un programa</h1>
     <p>
       El proceso de resoluciòn de problemas en un ordenador conduce a la escritura de un programa y
       su ejecuciòn. Las fases en el desarrollo de un programa pueden resumirse de la siguiente forma
@@ -127,7 +263,7 @@
         sobre la finalidad del programa y sus argumentos de entrada y de salida.</li>
     </ol>
   </div>
-    <h3><b>Algoritmos y estructuras de programacion</b></h3>
+    <h1><b>Algoritmos y estructuras de programacion</b></h1>
     <div class="recuadro" width="45px">
     <p>
       posteriormente, determinar la sucesion de acciones sencillas (susceptibles de ser ejecutadas por un
@@ -161,13 +297,6 @@
       </ol>
     
     
-
-                <li class="com"><h2>Visión</h2>
-                    Aspiramos a ser un recurso educativo líder que inspire la curiosidad y el entendimiento profundo de la algoritmia. Buscamos construir un puente entre la teoría y la aplicación práctica, fomentando un diálogo continuo sobre la evolución y el impacto de los algoritmos en nuestra sociedad.
-                    </li>
-                    <li class="com"><h2>Misión</h2>
-                        Nos comprometemos a proporcionar contenido educativo de calidad, presentado de manera accesible y amigable. Buscamos empoderar a nuestros usuarios para que no solo comprendan los algoritmos, sino que también se sientan capacitados para participar en conversaciones informadas sobre el papel de la algoritmia en el mundo moderno.
-                        </li>
                       
             </ul>
             <img class="ubicacion" src="imgenes/FOTO.jpg" alt="" width="400px" height="300px">
